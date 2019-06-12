@@ -192,9 +192,14 @@ namespace uwpApp1
         {
             if (args.Items.Count > 0)
             {
-                foreach(var item in args.Items)
+
+                foreach (var item in args.Items)
                 {
                     FolderInfo inf = item as FolderInfo;
+
+                        var tem = item as TreeViewNode;
+                        //var parent = tem.Parent;//tem is null
+
 
                     if (inf != null)
                     {

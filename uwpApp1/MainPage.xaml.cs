@@ -50,5 +50,16 @@ namespace uwpApp1
         {
 
         }
+
+        //private void Treeview_DragItemsCompleted(TreeView sender, TreeViewDragItemsCompletedEventArgs args)
+        //{
+        //    foreach (var item in args.Items)
+        //    {
+        //        var tem = item as TreeViewNode;
+        //        var parent = tem.Parent;
+
+        //        //do some stuff judge the parent.
+        //    }
+        //}
     }
 }

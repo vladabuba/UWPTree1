@@ -100,7 +100,8 @@
             </Grid.RowDefinitions>
             <TextBox Header="Inside User Control" Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Grid.Row="1" Text="{Binding Text, Mode=OneWay}" />
-            
+
+            <!--DragItemsCompleted="Treeview_DragItemsCompleted"-->
             <localdata:MyTreeView 
                 x:Name="treeview" Grid.Row="2" ItemsSource="{Binding storageFolders,Mode=TwoWay}" 
                 Style="{StaticResource TreeViewStyle1}"
@@ -109,6 +110,7 @@
                 AllowDrop="True"
                 CanDrag="True"
                 CanDragItems="True"
+                
                 >
         
             </localdata:MyTreeView>
